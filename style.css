@@ -1,0 +1,23 @@
+#footer{
+    background: linear-gradient(rgb(57, 105, 207),rgb(81, 161, 207));
+    text-align: center;
+    padding: 4vh;
+}   
+body{
+    background-color: rgb(31, 49, 82);
+    align-items: center;
+}
+.form{
+    background: rgb(44, 72, 124);
+    text-align: center;
+    margin: 4vh auto 0 auto;
+    height: 35vh;
+    width: 75vh;
+    display: flex;
+    justify-content: center;
+    border-radius: 2vh;
+}
+#jogo{
+    background: rgb(41, 60, 88);
+    margin: 0.5vh 0.12vh;
+}
