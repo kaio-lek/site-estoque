@@ -1,32 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PIXEL-HUB</title>
+    <title>Tela inicial</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <footer id="footer">
-        <h1>SEJA BEM-VINDO AO PIXEL-HUB</h1>
+        <h1>SEJA BEM-VINDO A TELA INICIAL</h1>
     </footer>
 
     <div class="form">
         <form>
-            <label id="label">Nome do jogo:</label>
-            <input type="text" name="jogo" id="jogo" placeholder="Digite aqui:" oninput="filtrarJogos()">
-            <br><br>
-
-            <div id="areaSelect"></div>
+            <h1 id="h1mn">Antes de prosseguir, informe se você é um Repositor ou um Cliente</h1>
+            <label for="">Cliente</label>
+            <input type="radio" id="cliente" name="tipo" value="a">
+            <label for="">Repositor</label>
+            <input type="radio" id="repositor" name="tipo" value="b">
             <br>
-
-            <label id="label">Quantidade:</label>
-            <input type="number" name="qtd" id="quantidade" placeholder="Digite aqui:">
-            <br><br>
-
+            <br>
+            <input type="button" onclick="slam()" value="Entrar" >
+            <br>
             <p id="res"></p>
         </form>
     </div>
+    <script>
+        function slam(){
+            let value = document.querySelector('Input[name="tipo"]:checked');
+            if(!value){
+                alert ("O campo não pode ficar vazio");
+            }
+            else if(value.value === "a"){
+                document.getElementById("res").innerHTML = '<a href="cliente.html">prosseguir</a>';
+            }
+            else{
+                document.getElementById("res").innerHTML = '<a href="repositor.html">prosseguir</a>';
+            }
+        }
+    </script>
 </body>
 </html>
