@@ -1,3 +1,2 @@
-<?php
-
-$servidor = 
+<php
+echo "hello world";

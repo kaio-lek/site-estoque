@@ -22,7 +22,7 @@
             <br>
             <input type="button" onclick="slam()" value="Entrar" >
             <br>
-            <p id="res"></p>
+            <br>
         </form>
     </div>
     <script>
@@ -30,12 +30,13 @@
             let value = document.querySelector('Input[name="tipo"]:checked');
             if(!value){
                 alert ("O campo não pode ficar vazio");
+                return
             }
             else if(value.value === "a"){
-                document.getElementById("res").innerHTML = '<a href="cliente.html">prosseguir</a>';
+                window.location.href ="cliente.html";
             }
             else{
-                document.getElementById("res").innerHTML = '<a href="repositor.html">prosseguir</a>';
+                window.location.href = "repositor.html";
             }
         }
     </script>
