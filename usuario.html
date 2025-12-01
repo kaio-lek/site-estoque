@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PIXEL-HUB</title>
+    <title>Tela inicial</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <footer id="footer">
@@ -14,19 +13,22 @@
 
     <div class="form">
         <form>
-            <label id="label">Nome do jogo:</label>
-            <input type="text" name="jogo" id="jogo" placeholder="Digite aqui:" oninput="filtrarJogos()">
-            <br><br>
-
-            <div id="areaSelect"></div>
+            <h1 id="h1mn">Informe qual jogo deseja comprar</h1>
+            <label for="">Nome do jogo:</label>
+            <input type="text" id="cliente" name="jg" id="jogo" placeholder="Digite o nome do jogo">
+            <br />
+            <br />
+            
+            <label for="">Quantidade:</label>
+            <input type="number" id="repositor" name="qtd" placeholder="Digite a quantidade desejada">
             <br>
-
-            <label id="label">Quantidade:</label>
-            <input type="number" name="qtd" id="jogo" id="quantidade" placeholder="Digite aqui:">
-            <br><br>
-
-            <p id="res"></p>
+            <br>
+            <input type="button" value="Comprar" >
+            <br>
         </form>
     </div>
+    <script>
+        
+    </script>
 </body>
 </html>
